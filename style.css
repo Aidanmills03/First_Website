@@ -10,6 +10,11 @@
   margin-right: auto;
   margin-left: auto;
   margin-top: 70px;
+  border: solid #373e5e;
+}
+
+#header-photo:hover {
+  transform: scale(1.1);
 }
 
 .big_name {
@@ -24,6 +29,10 @@
   text-transform: capitalize;
 }
 
+.nav-links:hover {
+  color:white;
+}
+
 body {
   font-family:Arial,sans-serif;
 }
@@ -32,7 +41,7 @@ body {
    width: 100%;
    text-align: center;
    position: sticky;
-   top:auto;
+   top:0;
  }
 
 ul {
@@ -46,9 +55,6 @@ ul li {
   padding: 5px;
 }
 
-ul li :hover {
-  color: red;
-}
 .toggle {
   width: 100%;
   padding: 10px 20px;
