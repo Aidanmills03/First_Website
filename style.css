@@ -4,6 +4,10 @@
   margin: 0;
   background-color: #eee9cd;
 }
+body {
+  font-family:Arial,sans-serif;
+}
+
 #header-photo {
   border-radius: 50%;
   display: block;
@@ -27,23 +31,26 @@
   text-decoration: none;
   color: #373e5e;
   text-transform: capitalize;
+  padding: 1.2rem;
 }
 
 .nav-links:hover {
   color:white;
 }
 
-body {
-  font-family:Arial,sans-serif;
-}
 .navbar {
-   font-size: 1em;
+   font-size: 1.2em;
    width: 100%;
    text-align: center;
    position: sticky;
    top:0;
  }
-
+.main-grid {
+  display:grid;
+  grid-template-areas:
+  'showcase showcase'
+  'showcase showcase';
+}
 ul {
    width: 80%;
    margin: 0 auto;
