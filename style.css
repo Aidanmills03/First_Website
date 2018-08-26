@@ -2,11 +2,26 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  background-color: #eee9cd;
+}
+#header-photo {
+  border-radius: 50%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 70px;
+}
+
+.big_name {
+  text-align: center;
+  margin-top: 18px;
+  color: #373e5e;
 }
 
 .nav-links {
   text-decoration: none;
-  color: white;
+  color: #373e5e;
+  text-transform: capitalize;
 }
 
 body {
@@ -15,8 +30,9 @@ body {
 .navbar {
    font-size: 1em;
    width: 100%;
-   background: #00316b;
    text-align: center;
+   position: sticky;
+   top:auto;
  }
 
 ul {
@@ -36,10 +52,9 @@ ul li :hover {
 .toggle {
   width: 100%;
   padding: 10px 20px;
-  background: #001f44;
   text-align: right;
   box-sizing: border-box;
-  color: #fff;
+  color: ##373e5e;
   font-size: 25px;
   display: none;
 }
