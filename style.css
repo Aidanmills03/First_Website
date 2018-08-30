@@ -5,6 +5,10 @@
 }
 body {
   font-family:Arial,sans-serif;
+  background-color: #e7e7e3;
+}
+a {
+  text-decoration: none;
 }
 .background {
   background: url('https://images.pexels.com/photos/872958/pexels-photo-872958.jpeg?cs=srgb&dl=computer-device-electronics-872958.jpg&fm=jpg') center no-repeat;
@@ -74,23 +78,23 @@ body {
   grid-template-areas:
   "a a a a a a a a"
   ". . . . b b b b"
-  "c c c . b b b b"
-  "c c c . . . . ."
+  "c c c c b b b b"
+  "c c c c . . . ."
   "d d d d d d d d";
-}
-.wrapper > div {
-  border-style: solid;
 }
 .who {
   grid-area: a;
 }
  .experience {
   grid-area: b;
-  grid-row:
 }
 #grid-pic {
   grid-area: c;
   align-self: left;
+  background-image: url('https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?cs=srgb&dl=autumn-colorful-colourful-33109.jpg&fm=jpg');
+  background-size: cover;
+  background-position: center center;
+  border: 3px solid black;
 }
 .contact {
   grid-area: d;
@@ -128,7 +132,18 @@ ul li {
   font-size: 25px;
   display: none;
 }
-
+table {
+  margin: 0 auto;
+  border: 3px solid black;
+  border-collapse: seperate;
+  border-spacing: 1.1em 0;
+}
+th {
+  padding: 10px 0;
+}
+th a {
+  color: black;
+}
 @media (max-width:768px)
 {
   .toggle {
@@ -148,4 +163,34 @@ ul li {
   {
     display: block;
   }
+  /* CSS GRID */
+ .wrapper {
+   display: grid;
+   grid-gap: 40px;
+   grid-auto-rows: minmax(100px, auto);
+   margin: 10% 5% 5% 5%;
+   grid-template-areas:
+   "a"
+   "b"
+   "c"
+   "d";
+ }
+ .who {
+   grid-area: a;
+ }
+  .experience {
+   grid-area: b;
+ }
+ #grid-pic {
+   grid-area: c;
+   align-self: left;
+   background-image: url('https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?cs=srgb&dl=autumn-colorful-colourful-33109.jpg&fm=jpg');
+   background-size: cover;
+   background-position: center center;
+   border-style: 3px solid black;
+ }
+ .contact {
+   grid-area: d;
+ }
+ /* END GRID */
 }
