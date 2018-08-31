@@ -10,6 +10,11 @@ body {
 a {
   text-decoration: none;
 }
+p {
+  font-size: 1.3rem;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-weight: normal;
+}
 .background {
   background: url('https://images.pexels.com/photos/872958/pexels-photo-872958.jpeg?cs=srgb&dl=computer-device-electronics-872958.jpg&fm=jpg') center no-repeat;
   background-size: cover;
